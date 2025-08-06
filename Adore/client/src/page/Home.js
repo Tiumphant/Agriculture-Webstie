@@ -23,14 +23,10 @@ export default function Home() {
         <div
           className="position-absolute top-0 start-0 w-100 h-100"
           style={{
-            backgroundImage: `url(${backgroundimage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "blur(8px) brightness(0.7)",
+            background: "linear-gradient(to right, #d4fc79, #96e6a1)",
             zIndex: -2,
-            animation: "bgZoom 30s infinite alternate ease-in-out",
           }}
-        ></div>
+        />
         <div
           className="position-absolute top-0 start-0 w-100 h-100"
           style={{
@@ -86,6 +82,11 @@ export default function Home() {
                 <li className="nav-item">
                   <Link to="/productlist" className="nav-link text-success">
                     📋 Product List
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/bookingform" className="nav-link text-success">
+                    BookingForm
                   </Link>
                 </li>
                 <li className="nav-item">

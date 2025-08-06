@@ -1,6 +1,7 @@
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 // import Dashbord from "./page/Dashbord";
+import BookingForm from "./page/BookingForm";
 import Home from "./page/Home";
 import UserDashboard from "./page/UserDashboard";
 import Login from "./page/Login";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/bookingform" element={<BookingForm />} />
       </Routes>
     </BrowserRouter>
   );

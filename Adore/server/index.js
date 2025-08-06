@@ -6,11 +6,13 @@ const userRoutes = require("../server/controler/userControler");
 const ServiceRoutes = require("./controler/ServicesController");
 const NewsRoutes = require("./controler/NewsController");
 const ContactRoutes = require("./controler/ContactController");
+const BookingRoutes = require("./controler/BookingController");
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
+app.use("/api", BookingRoutes);
 app.use("/api", productRoutes);
 app.use("/api", userRoutes);
 app.use("/api", ServiceRoutes);

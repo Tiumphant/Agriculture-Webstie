@@ -46,7 +46,7 @@ export default function Dashboard() {
               <li>
                 <Link to="/productlistadmin">ProductList</Link>
               </li>
-            </ul>
+            </ul>   
             <ul>
               <button onClick={handleLogout}>
                 Logout {user?.firstName ? `(${user.firstName})` : ""}
